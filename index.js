@@ -4,6 +4,10 @@ const fromJsonp = function(str) {
     return str.substring(start + 1, end + 1);
 }
 
+const fromJavaScript = function(str) {
+    eval(str);
+}
+
 module.exports = {
     fromJsonp
 }
