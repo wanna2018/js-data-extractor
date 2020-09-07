@@ -4,7 +4,7 @@ const fromJsonp = function(str) {
     return str.substring(start + 1, end + 1);
 }
 
-const fromJavaScript = function(str) {
+const fromJavaScript = function(str, arr) {
     eval(str);
 }
 
